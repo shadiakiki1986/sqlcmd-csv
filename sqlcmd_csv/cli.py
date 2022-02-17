@@ -17,4 +17,4 @@ def cli(input, output):
     header = sp.split(result[0])
     body = [sp.split(x) for x in result[2:-3]]
     df = pd.DataFrame(body, columns=header)
-    df.to_csv(output)
+    df.to_csv(output, index=False)
