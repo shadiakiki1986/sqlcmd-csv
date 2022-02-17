@@ -3,8 +3,8 @@ import click
 import pandas as pd
 
 @click.command()
-@click.argument('input', type=click.File('rb'))
-@click.argument('output', type=click.File('wb'))
+@click.argument('input', type=click.File('r'))
+@click.argument('output', type=click.File('w'))
 def cli(input, output):
     """Convert output from microsoft's sqlcmd to valid csv.
     Solve https://stackoverflow.com/questions/425379/how-to-export-data-as-csv-format-from-sql-server-using-sqlcmd
