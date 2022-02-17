@@ -5,5 +5,12 @@ Solves https://stackoverflow.com/questions/425379/how-to-export-data-as-csv-form
 
 Demo: https://colab.research.google.com/drive/1LTUzo7n4lh73IC7GgIEm8nWRU1jTYFFO?usp=sharing
 
+Usage
+
+```
+sqlcmd ... -s, ...
+pip install git+https://github.com/shadiakiki1986/sqlcmd-csv.git
+sqlcmd_csv out.txt out.csv
+```
 
 Linked from SO answer https://stackoverflow.com/a/71166617/4126114
