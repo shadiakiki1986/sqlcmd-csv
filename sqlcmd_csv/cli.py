@@ -15,6 +15,6 @@ def cli(input, output):
     result = input.readlines()
     sp = FixedWidthSplitter(result[1])
     header = sp.split(result[0])
-    body = sp.split(result[2:-3])
+    body = [sp.split(x) for x in result[2:-3]]
     df = pd.DataFrame(body, columns=header)
     df.to_csv(output)
