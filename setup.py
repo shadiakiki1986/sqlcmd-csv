@@ -11,4 +11,8 @@ setup(
       "pandas",
       "click",
     ],
+    entry_points='''
+        [console_scripts]
+        sqlcmd_csv=sqlcmd_csv.cli:cli
+    ''',
 )
